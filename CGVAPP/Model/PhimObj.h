@@ -9,18 +9,18 @@
 #import <Foundation/Foundation.h>
 
 @interface PhimObj : NSObject
-@property (nonatomic, strong) NSString * namePhim;
+@property (nonatomic, strong) NSString * tenPhim;
 @property (nonatomic, strong) NSString * theLoai;
 @property (nonatomic, strong) NSString * thoiLuong;
 @property (nonatomic, strong) NSString * khoiChieu;
-@property (nonatomic, strong) NSString * linkDetail;
-@property (nonatomic, strong) NSString * urlImage;
+@property (nonatomic, strong) NSString * linkChitiet;
+@property (nonatomic, strong) NSString * linkAnh;
 -(id) initWithName:(NSString *) name
-           andCate:(NSString *) cate
-       andDuration:(NSString *) duration
-              date:(NSString *)date
-        linkDetail:(NSString *) linhDtail
-          imageUrl:(NSString *) imageURL;
+          catelogy:(NSString *) catelogy
+          duration:(NSString *) duration
+              date:(NSString *) date
+        linkDetail:(NSString *) linkDetail
+          imageUrl:(NSString *) imageUrl;
 
 
 

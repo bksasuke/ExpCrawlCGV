@@ -15,15 +15,20 @@
 
 
 @implementation PhimObj
--(id)initWithName:(NSString *)name andCate:(NSString *)cate andDuration:(NSString *)duration date:(NSString *)date linkDetail:(NSString *)linhDtail imageUrl:(NSString *)imageURL{
+- (id)initWithName:(NSString *)name
+          catelogy:(NSString *)catelogy
+          duration:(NSString *)duration
+              date:(NSString *)date
+        linkDetail:(NSString *)linkDetail
+          imageUrl:(NSString *)imageUrl {
     self = [super init];
     if (self) {
-        self.namePhim = name;
-        self.theLoai = cate;
+        self.tenPhim = name;
+        self.theLoai = catelogy;
         self.thoiLuong = duration;
         self.khoiChieu = date;
-        self.linkDetail = linhDtail;
-        self.urlImage = imageURL;
+        self.linkChitiet = linkDetail;
+        self.linkAnh = imageUrl;
     }
     return self;
 }
